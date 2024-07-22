@@ -1,1 +1,41 @@
-teste texto
+estatistica 4th August 
+select small data set (big data set is better [big enough]) maioria dos estudantes usa algo por vbolta de 503.
+1- Calculate Mean range SD CV
+2- Perform ONE-WAY anova, ANOVA results and report
+3- 2 variables for regression analysis / linear regression analysis/ hypothesis testing/ report
+4- basic process capability analysis / simple spc chart (X-bar chart) / report
+5- record oral presentation (+- 20 minutes, but is free of time)
+
+AULA 1
+Why statistics?
+*summarize numerical information efficient
+*inferential statistics ? too many people ?
+*data is impoortant to validate and evidence conclusion
+*3 steps:
+1- data organization
+2- summarization and categorization
+3- data analisys (DONT SIMPLY SHOW DATA, TELL THE RESEARCH STORY WITH YOUR DATA)
+*constant (pi number) x variables (heigth)
+*datatypes 
+categorical{qualitative} [(ordinal there is a order like 5 stars,4 stars), (nominal is like labels, apple banana), (binary is 2 possibilities, man x woman)] pie chart // pareto chart // bar chart
+numerical{quantitative} [(discrete is count number of fruits) and (continuous is measured size of population)] - Boxplot // Histogram
+IT IS NECESSARY TO EXPLAIN EACH OF THAT IN THE PROJECT
+*Measures of centre Mean - average, or the sum of numbers divided by the number of numbers / mode (most common value ) / median (middle number when the number are arranged se for numero par eh a media os dois valores do meio)
+VALE A PENA CITAR TODOS ESSES VALORES NO PROJETO MESMO SEM PRECISAR 
+*frequency table / group frequency table
+*outlier afeta mais a media do que median e mode
+*quartiles (q1 25% of the values are less than or equal to)(q2 sample median 50% of the values are less than or equal to) (q3 75%) 
+Interquartile range it measures the spread (just like sd and range// TALVEZ DE PRA MENCIONAR NO TRABALHO) : IQR Q3-Q1 I
+*Measures od dispersion: Range (difference between largest and smallest); SD (average difference or typical error); CV (percentage of the mean); ADICIONAR VARIANCE NO TRABALHO
+*Bell curves represents normal distribution SERIA BOM INCLUIR NO TRABALHO
+*Skewed data (quando bell curve nao aparece perfeito)/ positive and negative skew NO PROJETO EXPLICAR PQ ESTA POSITIVE OU NEGATIVE SKEW
+*CV EH BOM PRA COMPARAR WHOLE MILK X SKIN, JA O SD EH BOM NUMA COMPARACAO GLOBAL
+*USAR EXAMPLE DESCRIPTION PARA EXPLICAR SEUS DADOS
+*boxplot IQR + Q1 + Q2 + Q3 + maximum + minimum + outlier + upper/lower whisker / NAO ESQUECER DE TER LABELS, pelo menos n=20
+*COPIAR BOXPLOT COMPONENTS EXPLAINED NO TRABALHO
+*COLOCAR SCATERPLOT 
+*visualizing 2 variables:
+Y numerical x numerical : SCATERPLOT (mostrar ano por valor)
+Y numerical x categorical : BOXPLOT (mostrar calor por categoria)
+Y categorical x numerical: BOXPLOT WITH GROUPS (TRANSPOSED)
+Y categorical x categorical: STACKED BAR CHART OR CROSS TABULATION
