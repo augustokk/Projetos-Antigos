@@ -41,3 +41,72 @@ Y categorical x numerical: BOXPLOT WITH GROUPS (TRANSPOSED)
 Y categorical x categorical: STACKED BAR CHART OR CROSS TABULATION
 
 IDEIA APRESENTACAO TRABALHO : https://www.bordbia.ie/globalassets/bordbia.ie/industry/performance-and-prospects/bord-bia-exports-performance-and-prospects-report-2023---2024.pdf
+
+AULA 2
+CORRELATION AND REGRESSION 
+Both are basd on multivariate distribution (distribution of multiple variables)
+Correlation - association or absence of the relationship between 2 variables
+correlation coeficient (r) vai de -1 a +1
+when one variable incrases as the other increases - correlation positive
+when one decreases as the other increases - correlation negative
+absecence of correlation = 0
+ Scaterplot pode ser usado pra mostrar Correlation
+ coeficient of correlation (r ao quadrado) is the proportion of the variation in Y whick is explained by the variation in X, valor dado em percentual (Y = a + bX)
+ 1 - (r ao quadrado) mostrara uma porcentagem de variacao que nao eh explicada
+
+Regression - predicts the value of dependent variable based on the know of the independent variable
+RESPONSE AND PREDICTOR
+what is the response for example is the exam score
+what is the predictor for example is the revision time
+in that case as much as you have revision time, higher will be your exam score
+the idea to define it is what question you want to answer, for example:
+quanto mais passa o tempo, mais bebemos leite, nesse caso seria 
+in that case as much as you pass years, higher will be your milk ingestion
+so response would be value of milk
+predictor would be years
+
+Fit regression model results
+regression equation:
+(Y = a + bX)
+exam score = 42.78 + 0.57 revision time
+isso significa que, se uma pessoa estudar zero horas ela tiraria 42.78
+se ela estudar 1 unidade de revision time ela tiraria 42.78 + 0.57
+se ela estudar 4 unidade de revision time ela tiraria 42.78 + 0.57 x 4
+
+No nosso exemplo do whole milk
+VALUE = 11341 - 5.465 years
+Ssupondo o ano de 2000
+Value = 11341 - 5.465 x 2000 
+value =410 o que eh proximo do valor real 423
+for every one unit increase in year, the predicted value decreases by 5.465 units. The constant term (11341) represents the predicted value when the year is zero (unrealistic in real life scenario, but logically in math terms based in our data, if data was bigger, we could have a more reliable result, as our data is small, that brings more possibilities of error)
+
+P-value goes from 0 to 1: a small p-value (<0.05) suggests that the coeficient is statistically significant
+in our scenario the P-value for Year is 0.000, so we can concludes that years has a statistically positive effect on value (nao sei se fala positivo por ser + no sinal ou se eh pq eh proximo a 0)
+
+R-sq (r ao quadrado) represents the proportion of the variance in the vVALUE that is explained by the regression model
+in our scenario R-sq is 81.54%, which means that the model explains 81.54% of the variability in exam scores
+
+R-sq(adj) (r ao quadrado adjusted) is a more acurate measure of the model's fit when there are multiple terms in the model. it penalizes the model for having more terms
+the adjuste R-sq in our scenario is 80.93% ( in our scenario as we are using only one predictor (Year), that doesnt change much, would change if we include more predictors) por isso os valores sao parecidos do adjuste e do nao
+
+R-sq(pred) is an estimate of how well the model would fit a new data set, in our case it is 79.15%
+
+graficos (nao precisa usar todos, usa os que forem importantes)
+-Normal Probability plot this plot compares the residual to a normal distribution, if the residuals are normaly distributed the points will fall close to the line.
+In our scenario residuals may not be perfectly normal, but they are not severely deviating from normally either
+
+- Histogram shows distribution of residuals the shape of histogram also used to assess normality (expected the bell shape)
+in our case the histogram appears roughly symmetrical skewed to the rigth (positive) which is consistent with normality
+
+- Versus fit:shows the residuals plotter against the fitted values
+if there is no pattern, it suggests the residuals are random scattered and no relationship between residuals and fitted value
+when there is no pattern is a good sign
+in our case we have a pattern (o que significa?)
+
+- Versus order: displays the residuals on the y axis and the order in which data were collected on the x-axis
+purpose is to identify any patterns in the residual that might indicate a violation of the assumption independence of errors
+in our case (o que significa?)
+
+multiple regression (no caso do projeto nao sera necessario, pois nao temos + de 2 variaveis)
+
+
