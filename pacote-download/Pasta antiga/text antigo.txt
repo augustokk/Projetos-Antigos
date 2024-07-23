@@ -39,3 +39,5 @@ Y numerical x numerical : SCATERPLOT (mostrar ano por valor)
 Y numerical x categorical : BOXPLOT (mostrar calor por categoria)
 Y categorical x numerical: BOXPLOT WITH GROUPS (TRANSPOSED)
 Y categorical x categorical: STACKED BAR CHART OR CROSS TABULATION
+
+IDEIA APRESENTACAO TRABALHO : https://www.bordbia.ie/globalassets/bordbia.ie/industry/performance-and-prospects/bord-bia-exports-performance-and-prospects-report-2023---2024.pdf
