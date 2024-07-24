@@ -110,3 +110,115 @@ in our case (o que significa?)
 multiple regression (no caso do projeto nao sera necessario, pois nao temos + de 2 variaveis)
 
 
+AULA 3
+The purpose of an experiment is to discover information - This information may provide insight leading to action that will improve a process
+A large number of variables can potentially effect the performance of the system. Controllable and uncontrollable (noise factors)
+Objective of an experiment: which variables are most influential, small noise
+Design of experiment (DOE) and statistical process control (SPC) are very closed interrelated
+
+DOE is an active statistical method, SPC is a passive statistical method
+
+SPC: watch the process and wait for info to lead to change
+
+DOE: perform tests on the process, making changes in the inputs and observing changes in the output.
+
+PODE USAR ESSES TERMOS NO TRABALHO
+Independent variables are variables that are manipulated or are changed by researchers and whose effects are measured and compared (can also be called factor)
+The dependent variables refer to that type of variable that measures the affect of the independent variable(s) on the test units.  (response variable)
+
+If we wants to estimate milk consumption, then the factors such as type of milk and year are independent variables, while the  milk consumption is highly dependent on such factors. Therefore, they are designated as the  dependent variable or respnse variable.
+
+Factors are the variables that experimenters control during an experiment in order to determine their effect on the response variable, only use a limited number of values
+
+It is important to see factors when they are numerical should be a limited number of numerical values, in our scenario we migth use different ranges to observe it better, instead of taking all years, one by one, lets assume decades, for example, more numbers lead ro more errors
+
+DOE CONCEPTS
+1- formulate your question properly, what you want to achieve in your project?
+* how is the consumption over the decades of milk / whole / skimmed
+*does the consumption of milk of aspecific type yes affected by the decades
+
+2- you want to compare it with some scenario, some real life example, for example eyou could compare it with the increase of vegan people in the decades, (precisaria achar algum dado para ver isso)ou vai tentar comparar apenas leite contra leite?
+VOCE TAMBEM PODE CRIAR SEUS PROPRIOS DADOS SOBRE VEGANOS POR EXEMPLO E EXPLICAR PARA ELA, ITS FINE TO DO IF YOU MENTION IT, AS THAT IS THE LIMITATION OF YOUR DATA AND I NEEDED TO MAKE UP THE DATA
+
+3 - you should be able to replicate your experiment to avoid erros BIAS , nessa parte explicaria porque usou a decada como um todo ao inves de usar apenas um ano escolhido de forma randomica, that reduces the effect of uncontrolled variation, in other words increase the precision, avoid problems with outliers
+error variance
+learning effect (da pra tentar dizer algo do tipo, a pessoa depois que aprende a consumir o leite skimmed, e sabendo como utiliza-lo melhor no dia dia diminui o learning effect, pois ela aprende que pra receita dela do dia dia e pro consumo dela ser tao prazeroso quanto o normal ela precisa fazer pequenos ajustes ate chegar na expectativa dela)
+
+
+4 -randomization, eh mais focado em experimentos quando a pessoa nao sabe se vai tomar remedio ou placebo, sao escolhidas de forma randomica, muito dificil pensar em algo nesse estilo no nosso trabalho,a nao ser que crie uma pesquisa falsa fazendo diferentes pessoas testarem o leite de forma randomica e dizer qual dos dois a pessoa prefere, ai nesse caso daria pra aplicar o conceito de randomizacao, caso nao queira fazer isso, eh importante explicar que nao ha randomizacao no seu caso, pois sao dados coletados especificos 
+
+5 -Stratification (blocking)  A block is a subset of the experimental units, which are believed to be similar in responsiveness, but which may differ in responsiveness from the units in another block, unica possibilidade de usar seria dizer que o blocking eh na pesquisa que voce conduziu com as pessoas testando sabor de leite, nao daria pra fazer toda a pesquisa em apenas um dia e entao voce teve que fazer em dias diferentes, blocking eh entendido como fazer em blocos, ou seja palavra dividir eh importante para facilitar o entendimento
+CUIDADO PARA NAO CONFUNDIR COM RANDOM
+
+6- factorial experiments
+
+UMA BOA TABELA NAO MOSTRA MUITAS CASAS DECIMAIS:
+EH MELHOR MEAN = 11.2 DO QUE MEAN= 11.2965
+
+Hypothesis testing is a statistical analysis that uses sample data to assess two mutually exclusive theories about the properties of a population.
+Statisticians call these theories the null hypothesis and the alternative hypothesis.
+When you can reject the null hypothesis, the results are statistically significant (p value < 0.05), and your data support the theory that an effect exists at the population level.
+In testing, you use significance levels and p-values to determine whether the test results are statistically significant.
+
+Hypothesis testing is a form of inferential statistics that allows us to draw conclusions about an entire population based on a representative sample. We need to use a hypothesis test to determine the likelihood of obtaining our sample mean if the population mean is 260.
+Descriptive Statistics Alone Won’t Answer the Question
+
+Sampling distributions allow you to determine the likelihood of obtaining your sample statistic
+
+We’ll graph the sampling distribution based on the assumption that the meanfuelcost for the entire population has not changed and is still 260 (null hypothesis)
+
+We use the null hypothesis value as the basis of comparison for our observed sample value.
+
+The hypothesis testing procedure quantifies the unusualness of our sample with a probability and then compares it to an evidentiary standard.
+Significance levels and p-values allow us to test these two hypotheses:
+
+Null hypothesis: The population mean equals the null hypothesis mean (260).
+
+Alternative hypothesis: The population mean does not equal the null hypothesis mean (260).
+
+por exemplo podemos pegar um ano especifico (2000) usar ele como null hypothesis e outro ano (2023) como nossa alternativa hypothesis
+
+We’ll graph the sampling distribution based on the assumption that the milk consumption for the entire population has not changed and is still same value as in 2000 (null hypothesis)
+We use the null hypothesis value as the basis of comparison for our observed sample value.
+Alternative hypothesis: The consumption is not equal the null hypothesis mean .
+
+Type I error: The rejects a null hypothesis that is true. You can think of this as a false positive.
+Type II error: The test fails to reject a null hypothesis that is false. You can think of this as a false negative.
+
+we can estimate the sample distribution using t distribution
+
+Significance Level (Alpha)
+It specifies how strongly the sample evidence must contradict the null hypothesis before you can reject the null for the entire population.
+
+Lower significance levels also reduce the power of a hypothesis test to detect a difference that does exist.
+
+a significance level of 0.05 signifies a 5% risk of deciding that an effect exists when it does not exist.
+
+Use p-values and significance levels together to help you determine which hypothesis the data support.
+
+the Significance Level defines how far the sample value must be from the know value before we can reject the null hypothesis
+
+P-values 
+It specifies how strongly the sample evidence must contradict the null hypothesis before you can reject the null for the entire population.
+For instance, a significance level of 0.05 signifies a 5% risk of deciding that an effect exists when it does not exist.
+
+The effect is the distance between the sample value and null value:
+330.6 –260 = 70.6
+Region: 260 +/-70.6
+The total probability of the two shaded regions is 0.03112 
+cada lado do grafico fica com metade entao 0.01556
+
+If your P value is less than or equal to your alpha level, reject the null hypothesis.
+
+Confidence Level
+
+https://www.sciencedirect.com/science/article/abs/pii/0271531795020438
+
+one-way analysis of variance (ANOVA) is used to determine whether there are any statistically significant differences between the means of three or more independent (unrelated) groups.
+ANOVA determines whether three or more populations are statistically different from each other
+the samples are independent of each other
+
+have (approximately) normal distributions or when the sample number is high (e.g., > 30 per group).
+
+More samples are better, but the tests can be performed with as little as 3 samples per condition.
+A company tests a new marketing campaign in three different regions (East, West, and South). They measure the average monthly sales in each region for the past year. One-way ANOVA would assess if there's a significant difference in average sales between the three regions.
