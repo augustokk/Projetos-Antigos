@@ -222,3 +222,143 @@ have (approximately) normal distributions or when the sample number is high (e.g
 
 More samples are better, but the tests can be performed with as little as 3 samples per condition.
 A company tests a new marketing campaign in three different regions (East, West, and South). They measure the average monthly sales in each region for the past year. One-way ANOVA would assess if there's a significant difference in average sales between the three regions.
+
+AULA 4
+The null hypothesis (H0) states that the factor has no effect on the response. This is equivalent to saying that the population means are equal for all the factor levels. According to the null hypothesis, there is only random variation present.
+If the null hypothesis is correct, every α = 0. In our example , it means does not matter who kicks the ball > no change
+
+The alternative hypothesis (H1) states that the factor does have an effect on the response. If this is so, then some of the variation in the response is explained by the factor
+The alternative hypothesis (H1) states that the factor does have an effect on the response. If this is so, then some of the variation in the response is explained by the factor.
+
+The t-test is a method that determines whether two populations are statistically different from each other, whereas ANOVA determines whether three or more populations are statistically different from each other
+These tests are performed when:
+the samples are independent of each other
+have (approximately) normal distributions or when the sample number is high (e.g., > 30 per group).
+More samples are better, but the tests can be performed with as little as 3 samples per condition.
+
+How interpret and understand ANOVA:
+Step 1
+We look at the error variance first, i.e. how different are the distances when the player is not changed? The three sample
+variances 2.502 ,2.2172 ,2.9862 attempt to answer this question. Each of these variances is an estimate of the error variance, so it
+makes sense to combine them into a single ‘pooled’ estimate, by averaging them. The pooled estimate is (2.502 + 2.2172
++ 2.9862) / 3 = 6.69, symbol 𝑺𝒘 𝟐
+. This is the pooled within-samples variance, also called the error variance.
+Each of the individual estimates is based on 4-1 degrees of freedom, so the pooled estimate has 3(4-1) = 9 degrees of freedom.
+
+Step 2 Next we look at variation due to the factor, i.e. how different are the distances when the players are changed? We can
+estimate this by calculating the variance between the sample means above. This between-samples variance is denoted by 𝑺𝒃 𝟐
+.
+It is based on 3-1 = 2 degrees of freedom. 𝑺𝒃 𝟐
+= 2.8432 = 8.083. This figure needs to be adjusted because it is a variance of
+sample means, not a variance of individual values. Individual values vary more than sample means, by a factor n, where n is
+the sample size. Therefore, we multiply 𝑺𝒃 𝟐
+by 4, in order to estimate the variance between individual distances for different
+players. We require n × 𝑺𝒃 𝟐
+= 4 × 8.083 = 32.33
+
+Step 3 Remember that the question of interest is: does the factor have an effect on the response? Maybe not. Perhaps the
+apparent variation due to the factor is just more random variation. We can test this hypothesis by comparing the variance due
+to the factor with the variance due to error. To see if it is significantly bigger, we compute the variance ratio, F, which is named
+after Sir Ronald Fisher who developed ANOVA.
+F = variation between sample means / variation within the samples
+In this case F = 32.33 / 6.69 = 4.83.
+
+Step 4 Finally, we consider whether the calculated value of F is so unusual that it could not have occurred by chance. From the tables of the F distribution, we see that the critical value of F, at the 5% level, having 2 and 9 degrees of freedom, is 4.256. The calculated value of F exceeds this value, and therefore its p-value is less than 5%. We reject the null hypothesis, which states that the player has no effect on the distance
+
+We say that the result is significant, i.e. the disagreement between the data and the null hypothesis is unlikely to have occurred by chance.
+
+The data assert, at the 5% level, that player does affect distance. Jessy kicks the ball further than the other players.
+
+Interpretando resultados anova:
+
+Factor information:
+factor being considered ( Player)
+Level ( how many options = 3)
+Values (name of each player)
+
+Analysis of Variance:
+Source
+DF degree of freedom
+Adj Ss adjusted sum of squares
+adj MS adjusted mean square deviation
+F Value variance ratio
+P Value he probability of obtaining the data if the factor has no effect on the response
+
+WHAT IS IMPORTNAT ABOUT ALL IT? P-Value
+The p-value is less than 5%, showing that the data were unlikely to arise on the basis of the assumption that player has no effect on distance. We therefore reject this null hypothesis in favour of the alternative: player does have an effect on distance
+
+less or equal 5% we reject null hypothesis
+more than 5% we accept null hypothesis
+
+once you have it you can conclude your experiment
+
+ON MINITAB:
+NO DELA TEM DUAS COLUNAS, UMA PRA JOGADOR E UMA PRA DISTANCIA (NA DE JOGADORES SAO APENAS 3 OPCOES)
+StatS
+ANOVA ONE-WAY
+RESPONSE : DISTANCE
+FACTOR: PLAYER
+
+GRAPHS: 4 IN ONE
+OK
+
+Nos resultados que irao aparecer, nao eh mandatorio, porem seria interessante tambem interpretar r square
+how much of the variation proportion of the response can be explained by the factor (normalment 80-90% sao bons valores)
+se r square for baixo uma possivel explicacao eh:
+- all players have similar conditions (is an assumption)
+- the sample size is not good enough (that is a good answer to use)
+
+normal probability in her example is good because all dots are close and aligned with the red line
+
+versus fit, should have an equal distribution between the dots on the top of 0 and below 0
+
+histogram: in that scenario is
+skewed to the rigth, and the reason could be not enough data
+
+versus order is good to not have a trend, for example all dots ar going up or something like that, if they go up down up down, is good
+
+
+
+ANOVA assumptions
+1.The errors are independent
+2.The errors are normally distributed
+3.The errors have a uniform variance
+
+
+2 FACTOR EXPERIMENT (NOSSO CASO POR EXEMPLO)
+The effect of two factors on a response, e.g. the effect of driver and vehicle on fuel economy. There are two drivers (Jeremy and Ralph) and three vehicles (hatchback, saloon and SUV). Fuel economy is measured in litres/100 km.
+We can determine if driver has an effect on fuel economy, and if vehicle has an effect on fuel economy.
+
+It is convenient to think about the experiment by using a table, in which the rows represent the levels of one factor, the columns represent the levels of the other factor, and each cell represents a particular factor-level combination. It does not matter which factor goes in the rows, and which factor goes in the columns.
+
+This is referred to as a crossed design because every row crosses every column, showing that every level of one factor is combined with every level of the other factor, i.e. every driver drives every vehicle.
+The data must be presented to the software in a proper structure, with a column for every variable, and a row for every
+OU SEJA UMA TABELA EH A QUE USA NO MINITAB A AOUTRA EH PRA APRESENTAR EM FORMA SUMARIZADA E MELHOR/FACIL INTERPRETACAO
+
+QUANDO ROLAR O ANOVA IRAO APARECE 2 FACTOR INFORMATION E 2 PRO AMNALYSIS VARIANCE, SE ANALISA UM POR UM
+
+FOR DRIVER THE P VALUE IS HIGH (0.78 THAT MEANS DRIVER HAS NO IMPACT ON FUEL, WE ACCEPT THE NULL HYPOTHESIS) BE VERY CAREFUL HOW WRITE THE HYPOTHESIS
+
+FOR VEHICLE THE P VALUE IS LOW (0.04 THAT MEANS VEHICLE HAS IMPACT ON FUEL, WE REJECT THE NULL HYPOTHESIS) BE VERY CAREFUL HOW WRITE THE HYPOTHESIS
+
+QUANDO SAO 2 FATORES MINITAB:
+StatS
+ANOVA
+GENERAL LINEAR model
+FIT GENERAL LINEAR mode
+RESPONSE: FUEL economy
+FACTORS: DRIVER / VEHICLE
+GRAPHS 4 IN ONE
+
+LEMBRETE COMO TEM DOIS FATORES PRECISAMOS VER O R SQUARE ADJUSTED
+
+NO EXEMPLO DELA POR TER UM ESPACO VAZIO NO MEIO DO HISTOGRAM, EH BOM DIZER QUE EH DIFICIL DE INTERPRETYAR POR FALTA DE MAIS DADOS, UMA VEZ QUE PELO VAZIO ENTRE OS ESPACOS VOCE PODE TER QUE FAZER ASSUMPTIUONS, SE SERA BIMODAL OU BELL curve
+
+VERSUS ORDER IS HAPPENING SOMETHING, BECAUSE DATA IS NOT VERY RANDOM, SO A GOOD APPROACH WOULD BE GETTING MORE DATA
+Two-factor experiments have advantages over single-factor experiments: they are more economical, and interactions can be discovered.
+
+Crossed Factors:
+➢
+Each category of one factor occurs with every category of another.
+➢
+Allows calculation of interactions between factors.
