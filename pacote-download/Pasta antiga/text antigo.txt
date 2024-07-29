@@ -224,6 +224,7 @@ More samples are better, but the tests can be performed with as little as 3 samp
 A company tests a new marketing campaign in three different regions (East, West, and South). They measure the average monthly sales in each region for the past year. One-way ANOVA would assess if there's a significant difference in average sales between the three regions.
 
 AULA 4
+
 The null hypothesis (H0) states that the factor has no effect on the response. This is equivalent to saying that the population means are equal for all the factor levels. According to the null hypothesis, there is only random variation present.
 If the null hypothesis is correct, every α = 0. In our example , it means does not matter who kicks the ball > no change
 
@@ -362,3 +363,81 @@ Crossed Factors:
 Each category of one factor occurs with every category of another.
 ➢
 Allows calculation of interactions between factors.
+
+AULA 5
+statistical process control
+
+ SPC statistical process control is a method of quality control which employs statistical methods to monitor and control a process
+ -two sources of process variation:
+ - uncontrolled (or assugnable)
+ - chance variation (inherit in process)
+
+ the goal of SPC is redution or elimination of variability in the process by identification of assignable causes
+  * typical control chart has limits, nearly all points lie between the upper and lower control
+  * there is also a warning limits, typically set at 2 standard deviations from the mean, that is good because increase the sensitivity of the control chart, but also increase the risk of false alarm
+
+ * out of control: at least 1 point plots beyond the control limit, then the processi is out of control
+  - if the points behave in systematic or nonrandom manner process could be out of control
+ - pattern one : shift
+ - patter two: trend
+ - pattern three: point oustide control limits
+
+ *important uses of control chart:
+ -most processes do not operate in a state of statistical control
+ - if causes can be eliminated from the process, variability will be reduced and the process will be improved
+ - control chart ONLY detects assignable causes ( manager action will eliminate it)
+ - process improvement cycle
+
+ * Different types of control chart:
+ - Variable charts (continuous numerical data) [time, distance, weigth]
+
+ -attributes chart (categorical or discrete numerical data) [good/ bad, percentage of defects]
+
+*control chart:
+-sample size to be selected and frequency of selection must be specified
+-larger samples easier to detect small shifts in process
+- average run length (ARL): THE RESULT OF THAT CALCULATION WILL INDICATE TO USE THAT A OUT-OF-CONTROL SIGNAL WILL BE GENERATED EVEREY (ARL result) samples
+
+*normality
+*stability
+*centrality
+*capability
+*performance
+
+-IF THE OVERALL STANDARD DEVIATION EXCEEDS WITHIN STANDARD DEVIATION BY MORE THAN 10%, PROCESS IS NOT STABLE
+
+we select that to measured because measurements are made on process rather than the product
+the target duration of collect data of a clients is 10 minutes:
+the LSL and USL are (7) and  (13) respectively
+120 clients were timed on 2 days.
+control limit are shown on graph (they are not specification limits, hey represent values unlikely to be violated as long as the process remains in control)
+NOSSO CASO PARECE QUE XBAR-S chart parece ser o mais apropriado por ser continuous data (time) e subgroup size > 10
+
+comment on: [IDEAL COPIAR IDEIA DO SLIDE DELA]
+*normality
+look the shape of the data, looks like a bell curve? that show normal distribution
+
+*stability
+check the data STDev (Overall) and STDev (Within) if lies on 10% to say if it is out of control or not (if not is stable)
+
+*centrality
+check if the target is close to the mean, so the process appears to be central
+
+*capability
+we look at cp and cpk
+minimum acceptable value for procss capability is 1.33 ( to be deemed capable)
+a value of 2 or greater is considered ideal
+cpk also have a value of 1.33 minimum
+
+*performance
+we look at pp ppk
+same rules from capability applies
+
+common cause lies on 6 M's 
+Men interviewerr not properly trained
+Material the flyer information is not very easy to understand
+Machine poroblem on ipad to collect data
+Methoids perguntas feitas de forma na qual o entrecistado nseja claro para entender / language barrier
+Mileu (environment) raining day
+Measuremten problem with the cronometer not being able to measure it probably
+GIVE POSSIBLE REASON FOR EACH ONE OF IT, BEING VERY SPECIFIC IF POSSIBLE
