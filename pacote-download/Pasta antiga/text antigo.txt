@@ -441,3 +441,22 @@ Methoids perguntas feitas de forma na qual o entrecistado nseja claro para enten
 Mileu (environment) raining day
 Measuremten problem with the cronometer not being able to measure it probably
 GIVE POSSIBLE REASON FOR EACH ONE OF IT, BEING VERY SPECIFIC IF POSSIBLE
+
+
+
+
+
+Claro! Estatística inferencial é uma parte da estatística que nos ajuda a tirar conclusões sobre uma população com base em uma amostra de dados. Em vez de analisar todos os dados possíveis, usamos uma parte deles para fazer previsões ou inferências.
+
+Por exemplo, imagine que você quer saber a altura média dos estudantes de uma escola. Em vez de medir todos os estudantes, você mede apenas alguns e usa esses dados para estimar a altura média de todos os estudantes.
+
+A estatística inferencial usa métodos como testes de hipóteses e intervalos de confiança para garantir que essas conclusões sejam confiáveis.
+
+PODE USAR ESSES TERMOS NO TRABALHO
+Independent variables are variables that are manipulated or are changed by researchers and whose effects are measured and compared (can also be called factor)
+The dependent variables refer to that type of variable that measures the affect of the independent variable(s) on the test units.  (response variable)
+SPC: watch the process and wait for info to lead to change
+
+If we wants to estimate milk consumption, then the factors such as type of milk and year are independent variables, while the  milk consumption is highly dependent on such factors. Therefore, they are designated as the  dependent variable or respnse variable.
+
+Factors are the variables that experimenters control during an experiment in order to determine their effect on the response variable, only use a limited number of values
